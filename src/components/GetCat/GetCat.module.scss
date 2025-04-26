@@ -1,0 +1,51 @@
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.getCat {
+  margin: 0 auto;
+  width: 336px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 20px 54px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
+  border-radius: 4px;
+  background: #fff;
+  gap: 40px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .result {
+    width: 100%;
+    height: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loader {
+      width: 50px;
+      aspect-ratio: 1.22;
+      background-image: url('../../assets/images/cat.svg');
+      background-size: contain;
+      background-position: center;
+      animation: rotate 0.5s linear infinite;
+    }
+
+    .errorMessage {
+      text-align: center;
+    }
+    .image {
+      width: 100%;
+      aspect-ratio: 1.22;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
