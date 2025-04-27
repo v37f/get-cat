@@ -46,8 +46,11 @@
   }
 
   .label {
-    letter-spacing: -0.2px;
+    font-family: 'Times New Roman', Arial, sans-serif;
+    font-style: normal;
     font-size: 15px;
+    letter-spacing: -0.2px;
+    color: #000;
     margin: 0;
     cursor: pointer;
   }
